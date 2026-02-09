@@ -1,0 +1,6 @@
+import RPi.GPIO as GPIO
+
+print("Versión de GPIO:", GPIO.VERSION)
+
+
+
