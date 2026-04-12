@@ -14,7 +14,7 @@ try:
     
     while True:
         try:
-            porcentaje = int(input("a cuanto porcentaje quieres mover el motor?\nIngresa numero de -100 a 100"))
+            porcentaje = int(input("\nA cuanto porcentaje quieres mover el motor?\nIngresa numero de -100 a 100\n"))
             
             if (porcentaje < -100) or (porcentaje > 100):
                 raise percentageError
@@ -27,6 +27,7 @@ try:
             if arduino.in_waiting > 0:
                 mensaje = arduino.readline().decode('utf-8').strip()
                 print(mensaje)
+                
         except ValueError:
             print("ingresa un numero valido!")
         
